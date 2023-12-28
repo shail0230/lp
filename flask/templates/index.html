@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Appointment</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="/static/css/fontAwesome.css">
+        <link rel="stylesheet" href="/static/css/hero-slider.css">
+        <link rel="stylesheet" href="/static/css/owl-carousel.css">
+        <link rel="stylesheet" href="/static/css/datepicker.css">
+        <link rel="stylesheet" href="/static/css/templatemo-style.css">
+<!--
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+-->
+    </head>
+
+<body>
+     <div class="black-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="index.html">
+                        <div class="logo">
+                            <img src="{{ url_for('static', filename='logo1.png') }}" alt="Venue Logo">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+     <section id="video-container">
+            <iframe class="player" 
+            src="https://www.youtube.com/embed/KaDgaVzI5mg?si=kzPRKtaTdmJXnGdO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <section class = "last">
+            
+            <div class = "card-container">
+
+                <div class = "card-content">
+                    <h3>Make An Appointment</h3>
+                    <form id="appointmentForm" action="/submit_appointment" method="post">
+                        <div class = "form-row-1">
+                          
+                          <input type="date" id="selectedDate" name="date" required>
+                        </div> 
+                        <div class = "form-row-2">
+                           
+                            <select id="selectedTime" name="time" required>
+                                <option value="10:00 ">10:00 - 11:00 IST</option>
+                                <option value="12:00 ">12:00 - 13:00 IST</option>
+                                <option value="14:00 ">14:00 - 15:00 IST</option>
+                              </select>
+                        </div> 
+
+                        <div class = "form-row">
+                            <input type = "text" placeholder="Full Name" name="name" required>
+                            <input type = "phone" placeholder="Phone Number" name="phone" required>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "email" placeholder="Email" name="email" required>
+                            <input type = "submit" value = "Book A Meeting">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+</body>
+</html>

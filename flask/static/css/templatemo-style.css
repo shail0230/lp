@@ -1,0 +1,168 @@
+
+body {
+  font-family: 'Raleway', 'sans-serif';
+  background-color: #fff;
+  margin: 0;
+    padding: 0;
+
+}
+
+.black-header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0; /* Adjust the padding as needed */
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+}
+
+
+
+#header .logo {
+  
+}
+
+#header .logo img {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+
+.player{
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
+  .last{
+    min-height: 100vh;
+    background: url("/static/bg2.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+    margin-left: 10px;
+}
+
+.last h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-content{
+    background: #000000;
+    height: 430px;
+}
+.card-content h3{
+    text-align: center;
+    color: #D4AF37;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+ 
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form-row-1{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form-row-2{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 999;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    
+    background: #FFFFFF;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  padding:5px;
+  font-size: 18px;
+  font-weight: 999;
+  border:none;
+  color: #000000;
+}
+form input[type = submit]{
+    color:#000000  ;
+    background: #D4AF37;
+    padding: 12px 0;
+    border-radius: 4px;
+    font-weight: 999;
+    cursor: pointer;
+}
+
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+
+input[type="date"]{
+  background: #FFFFFF;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  padding:5px;
+  font-size: 18px;
+  font-weight: 999;
+  border:none;
+  color: #000000;
+}
+
+input[type="time"]{
+ /*
+ color: #9a9a9a; 
+ width:200px;
+  height:30px;
+  position:absolute;
+  transform:translate(-50%,-50%);*/
+  background: #FFFFFF;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  padding:5px;
+  font-size: 18px;
+  font-weight: 999;
+  border:none;
+  color: #000000;
+}
+
+  
+
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}
